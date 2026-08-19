@@ -1,67 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Wanderly | Discover More. Travel Further.</title>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Wanderly | Explore the World Your Way</title>
 
     <meta
         name="description"
-        content="Discover amazing destinations and plan your next adventure with Wanderly."
+        content="Discover beautiful destinations and unforgettable travel experiences with Wanderly."
     >
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
         rel="stylesheet"
     >
 
-    <!-- Icons -->
+    <!-- Font Awesome -->
+
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
+
+    <!-- Main CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+
+    <!-- =========================
+         HEADER / NAVIGATION
+    ========================== -->
+
     <header class="header">
+
         <nav class="navbar container">
+
+            <!-- Logo -->
 
             <a href="#home" class="logo">
                 Wander<span>ly</span>
             </a>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
 
-            <div class="nav-menu" id="navMenu">
+            <!-- Desktop Navigation -->
 
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#destinations" class="nav-link">Destinations</a>
-                <a href="#packages" class="nav-link">Packages</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
+            <div class="nav-links">
 
-                <a href="#plan" class="nav-button">
+                <a href="#home" class="active">
+                    Home
+                </a>
+
+                <a href="#destinations">
+                    Destinations
+                </a>
+
+                <a href="#packages">
+                    Packages
+                </a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+                <!-- UPDATED -->
+
+                <a href="plan.html" class="nav-button">
                     Plan Your Trip
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
 
             </div>
 
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+            >
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
         </nav>
+
+
+        <!-- Mobile Navigation -->
+
+        <div class="mobile-menu" id="mobileMenu">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#destinations">
+                Destinations
+            </a>
+
+            <a href="#packages">
+                Packages
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+            <!-- UPDATED -->
+
+            <a href="plan.html">
+                Plan Your Trip
+            </a>
+
+        </div>
+
     </header>
 
 
-    <!-- ================= HERO ================= -->
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
     <main>
 
         <section class="hero" id="home">
@@ -70,50 +160,654 @@
 
             <div class="container hero-content">
 
-                <p class="hero-tag">
-                    <i class="fa-solid fa-location-dot"></i>
-                    Your journey starts here
-                </p>
+                <div class="hero-text">
 
-                <h1>
-                    Explore the World,<br>
-                    <span>Your Way.</span>
-                </h1>
+                    <p class="eyebrow">
+                        DISCOVER. EXPLORE. EXPERIENCE.
+                    </p>
 
-                <p class="hero-description">
-                    Discover breathtaking destinations, unforgettable
-                    experiences and carefully crafted journeys made for you.
-                </p>
+                    <h1>
+                        Explore the World,
+                        <span>Your Way.</span>
+                    </h1>
 
-                <div class="hero-buttons">
+                    <p class="hero-description">
+                        Discover breathtaking destinations,
+                        unforgettable experiences, and journeys
+                        designed around you.
+                    </p>
 
-                    <a href="#destinations" class="primary-button">
-                        Explore Destinations
+                    <div class="hero-actions">
+
+                        <a
+                            href="#destinations"
+                            class="primary-button"
+                        >
+                            Explore Destinations
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a
+                            href="#packages"
+                            class="secondary-button"
+                        >
+                            View Packages
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+                <!-- =========================
+             POPULAR DESTINATIONS
+        ========================== -->
+
+        <section class="destinations section" id="destinations">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="section-tag">
+                            EXPLORE THE WORLD
+                        </p>
+
+                        <h2>
+                            Popular Destinations
+                        </h2>
+                    </div>
+
+                    <a href="#packages" class="view-all">
+                        View all
                         <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                    <a href="#packages" class="secondary-button">
-                        View Packages
                     </a>
 
                 </div>
 
-                <div class="hero-stats">
 
-                    <div class="hero-stat">
-                        <strong>50+</strong>
-                        <span>Destinations</span>
+                <div class="destination-grid">
+
+
+                    <!-- Bali -->
+
+                    <article class="destination-card">
+
+                        <div class="destination-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=85"
+                                alt="Bali"
+                            >
+
+                            <span class="destination-tag">
+                                ASIA
+                            </span>
+
+                        </div>
+
+                        <div class="destination-content">
+
+                            <div>
+                                <h3>Bali</h3>
+
+                                <p>
+                                    Indonesia
+                                </p>
+                            </div>
+
+                            <a
+                                href="#packages"
+                                class="destination-arrow"
+                                aria-label="Explore Bali"
+                            >
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Dubai -->
+
+                    <article class="destination-card">
+
+                        <div class="destination-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=85"
+                                alt="Dubai"
+                            >
+
+                            <span class="destination-tag">
+                                MIDDLE EAST
+                            </span>
+
+                        </div>
+
+                        <div class="destination-content">
+
+                            <div>
+                                <h3>Dubai</h3>
+
+                                <p>
+                                    United Arab Emirates
+                                </p>
+                            </div>
+
+                            <a
+                                href="#packages"
+                                class="destination-arrow"
+                                aria-label="Explore Dubai"
+                            >
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Maldives -->
+
+                    <article class="destination-card">
+
+                        <div class="destination-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=900&q=85"
+                                alt="Maldives"
+                            >
+
+                            <span class="destination-tag">
+                                ASIA
+                            </span>
+
+                        </div>
+
+                        <div class="destination-content">
+
+                            <div>
+                                <h3>Maldives</h3>
+
+                                <p>
+                                    Indian Ocean
+                                </p>
+                            </div>
+
+                            <a
+                                href="#packages"
+                                class="destination-arrow"
+                                aria-label="Explore Maldives"
+                            >
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Switzerland -->
+
+                    <article class="destination-card">
+
+                        <div class="destination-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1527668752968-14dc70a27c95?auto=format&fit=crop&w=900&q=85"
+                                alt="Switzerland"
+                            >
+
+                            <span class="destination-tag">
+                                EUROPE
+                            </span>
+
+                        </div>
+
+                        <div class="destination-content">
+
+                            <div>
+                                <h3>Switzerland</h3>
+
+                                <p>
+                                    Europe
+                                </p>
+                            </div>
+
+                            <a
+                                href="#packages"
+                                class="destination-arrow"
+                                aria-label="Explore Switzerland"
+                            >
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+                <!-- =========================
+             FEATURED PACKAGES
+        ========================== -->
+
+        <section class="packages section" id="packages">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-tag">
+                            TRAVEL WITH WANDERLY
+                        </p>
+
+                        <h2>
+                            Featured Packages
+                        </h2>
+
                     </div>
 
-                    <div class="hero-stat">
-                        <strong>10K+</strong>
-                        <span>Happy Travelers</span>
+                    <p class="section-description">
+                        Carefully designed travel experiences with
+                        everything you need for a memorable getaway.
+                    </p>
+
+                </div>
+
+
+                <div class="package-grid">
+
+
+                    <!-- =========================
+                         BALI PACKAGE
+                    ========================== -->
+
+                    <article class="package-card">
+
+                        <div class="package-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=85"
+                                alt="Bali vacation"
+                            >
+
+                            <span class="package-label">
+                                Popular
+                            </span>
+
+                        </div>
+
+
+                        <div class="package-content">
+
+                            <div class="package-meta">
+
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    5 Days / 4 Nights
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Bali
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Bali Island Escape
+                            </h3>
+
+
+                            <p>
+                                Experience beautiful beaches,
+                                peaceful temples and the best of
+                                Bali with a relaxing island getaway.
+                            </p>
+
+
+                            <div class="package-bottom">
+
+                                <div class="package-price">
+
+                                    <span>
+                                        Starting from
+                                    </span>
+
+                                    <strong>
+                                        ₹39,999
+                                    </strong>
+
+                                </div>
+
+
+                                <!-- UPDATED -->
+
+                                <a
+                                    href="plan.html?package=Bali%20Island%20Escape"
+                                    class="package-button"
+                                >
+
+                                    View Trip
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =========================
+                         DUBAI PACKAGE
+                    ========================== -->
+
+                    <article class="package-card">
+
+                        <div class="package-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1000&q=85"
+                                alt="Dubai vacation"
+                            >
+
+                            <span class="package-label">
+                                Best Seller
+                            </span>
+
+                        </div>
+
+
+                        <div class="package-content">
+
+                            <div class="package-meta">
+
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    6 Days / 5 Nights
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Dubai
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Dubai City Adventure
+                            </h3>
+
+
+                            <p>
+                                Explore iconic landmarks, desert
+                                landscapes, luxury experiences and
+                                the vibrant city of Dubai.
+                            </p>
+
+
+                            <div class="package-bottom">
+
+                                <div class="package-price">
+
+                                    <span>
+                                        Starting from
+                                    </span>
+
+                                    <strong>
+                                        ₹49,999
+                                    </strong>
+
+                                </div>
+
+
+                                <!-- UPDATED -->
+
+                                <a
+                                    href="plan.html?package=Dubai%20City%20Adventure"
+                                    class="package-button"
+                                >
+
+                                    View Trip
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- =========================
+                         MALDIVES PACKAGE
+                    ========================== -->
+
+                    <article class="package-card">
+
+                        <div class="package-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1000&q=85"
+                                alt="Maldives vacation"
+                            >
+
+                            <span class="package-label">
+                                Luxury
+                            </span>
+
+                        </div>
+
+
+                        <div class="package-content">
+
+                            <div class="package-meta">
+
+                                <span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    5 Days / 4 Nights
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Maldives
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Maldives Paradise
+                            </h3>
+
+
+                            <p>
+                                Enjoy crystal-clear waters, private
+                                beaches and a peaceful tropical
+                                island experience.
+                            </p>
+
+
+                            <div class="package-bottom">
+
+                                <div class="package-price">
+
+                                    <span>
+                                        Starting from
+                                    </span>
+
+                                    <strong>
+                                        ₹54,999
+                                    </strong>
+
+                                </div>
+
+
+                                <!-- UPDATED -->
+
+                                <a
+                                    href="plan.html?package=Maldives%20Paradise"
+                                    class="package-button"
+                                >
+
+                                    View Trip
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>        <!-- =========================
+             WHY WANDERLY
+        ========================== -->
+
+        <section class="why-us section" id="about">
+
+            <div class="container">
+
+                <div class="section-heading why-heading">
+
+                    <div>
+
+                        <p class="section-tag">
+                            WHY WANDERLY
+                        </p>
+
+                        <h2>
+                            Travel With<br>
+                            Confidence
+                        </h2>
+
                     </div>
 
-                    <div class="hero-stat">
-                        <strong>4.9</strong>
-                        <span>Traveler Rating</span>
+
+                    <p class="section-description">
+
+                        We make travel simple, memorable and
+                        stress-free by taking care of the details
+                        that matter most.
+
+                    </p>
+
+                </div>
+
+
+                <div class="benefits-grid">
+
+
+                    <!-- Benefit 1 -->
+
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+
+                            <i class="fa-solid fa-tags"></i>
+
+                        </div>
+
+                        <h3>
+                            Best Travel Deals
+                        </h3>
+
+                        <p>
+
+                            Get great value with carefully selected
+                            packages designed to give you more
+                            for your money.
+
+                        </p>
+
+                        <span class="benefit-number">
+                            01
+                        </span>
+
                     </div>
+
+
+                    <!-- Benefit 2 -->
+
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+
+                            <i class="fa-solid fa-compass"></i>
+
+                        </div>
+
+                        <h3>
+                            Handpicked Destinations
+                        </h3>
+
+                        <p>
+
+                            Explore amazing places chosen for their
+                            unique experiences, beauty and
+                            unforgettable memories.
+
+                        </p>
+
+                        <span class="benefit-number">
+                            02
+                        </span>
+
+                    </div>
+
+
+                    <!-- Benefit 3 -->
+
+                    <div class="benefit-card">
+
+                        <div class="benefit-icon">
+
+                            <i class="fa-solid fa-headset"></i>
+
+                        </div>
+
+                        <h3>
+                            24/7 Support
+                        </h3>
+
+                        <p>
+
+                            Our travel support team is always ready
+                            to help before, during and after your
+                            journey.
+
+                        </p>
+
+                        <span class="benefit-number">
+                            03
+                        </span>
+
+                    </div>
+
 
                 </div>
 
@@ -122,554 +816,228 @@
         </section>
 
 
-        <!-- ================= POPULAR DESTINATIONS ================= -->
-<section class="destinations section" id="destinations">
+        <!-- =========================
+             FINAL CTA
+        ========================== -->
 
-    <div class="container">
+        <section class="final-cta" id="plan">
 
-        <div class="section-heading">
-            <div>
-                <p class="section-tag">EXPLORE THE WORLD</p>
-                <h2>Popular Destinations</h2>
-            </div>
+            <div class="container">
 
-            <p class="section-description">
-                Discover beautiful places, unforgettable experiences,
-                and destinations made for your next adventure.
-            </p>
-        </div>
+                <div class="cta-box">
 
+                    <div class="cta-content">
 
-        <div class="destination-grid">
+                        <p class="section-tag">
+                            YOUR NEXT ADVENTURE AWAITS
+                        </p>
 
-            <!-- Bali -->
-            <article class="destination-card">
 
-                <div class="destination-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=85"
-                        alt="Bali destination"
-                    >
+                        <h2>
 
-                    <span class="destination-rating">
-                        <i class="fa-solid fa-star"></i>
-                        4.9
-                    </span>
-                </div>
+                            Ready for Your<br>
+                            Next Adventure?
 
-                <div class="destination-content">
+                        </h2>
 
-                    <div class="destination-title">
-                        <h3>Bali</h3>
-                        <span>Indonesia</span>
-                    </div>
 
-                    <p>
-                        Relax on beautiful beaches, explore ancient temples
-                        and experience the magic of the island.
-                    </p>
+                        <p>
 
-                    <a href="#packages" class="destination-link">
-                        Explore
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                            Tell us where you want to go and we'll
+                            help you turn your travel dreams into
+                            unforgettable memories.
 
-                </div>
+                        </p>
 
-            </article>
 
+                        <!-- UPDATED -->
 
-            <!-- Dubai -->
-            <article class="destination-card">
+                        <a
+                            href="plan.html"
+                            class="cta-button"
+                        >
 
-                <div class="destination-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=85"
-                        alt="Dubai skyline"
-                    >
+                            Plan Your Trip
 
-                    <span class="destination-rating">
-                        <i class="fa-solid fa-star"></i>
-                        4.8
-                    </span>
-                </div>
-
-                <div class="destination-content">
-
-                    <div class="destination-title">
-                        <h3>Dubai</h3>
-                        <span>UAE</span>
-                    </div>
-
-                    <p>
-                        Discover futuristic architecture, luxury shopping,
-                        desert adventures and vibrant city life.
-                    </p>
-
-                    <a href="#packages" class="destination-link">
-                        Explore
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- Maldives -->
-            <article class="destination-card">
-
-                <div class="destination-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=900&q=85"
-                        alt="Maldives tropical island"
-                    >
-
-                    <span class="destination-rating">
-                        <i class="fa-solid fa-star"></i>
-                        4.9
-                    </span>
-                </div>
-
-                <div class="destination-content">
-
-                    <div class="destination-title">
-                        <h3>Maldives</h3>
-                        <span>Indian Ocean</span>
-                    </div>
-
-                    <p>
-                        Escape to crystal-clear waters, private beaches
-                        and peaceful tropical island experiences.
-                    </p>
-
-                    <a href="#packages" class="destination-link">
-                        Explore
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- Switzerland -->
-            <article class="destination-card">
-
-                <div class="destination-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=900&q=85"
-                        alt="Swiss Alps"
-                    >
-
-                    <span class="destination-rating">
-                        <i class="fa-solid fa-star"></i>
-                        4.9
-                    </span>
-                </div>
-
-                <div class="destination-content">
-
-                    <div class="destination-title">
-                        <h3>Switzerland</h3>
-                        <span>Europe</span>
-                    </div>
-
-                    <p>
-                        Explore snow-covered mountains, peaceful villages
-                        and some of Europe's most beautiful landscapes.
-                    </p>
-
-                    <a href="#packages" class="destination-link">
-                        Explore
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ================= TRAVEL PACKAGES ================= -->
-<section class="packages section" id="packages">
-
-    <div class="container">
-
-        <div class="section-heading">
-            <div>
-                <p class="section-tag">TRAVEL WITH WANDERLY</p>
-                <h2>Featured Packages</h2>
-            </div>
-
-            <p class="section-description">
-                Carefully designed travel experiences with everything
-                you need for a memorable getaway.
-            </p>
-        </div>
-
-
-        <div class="package-grid">
-
-            <!-- Package 1 -->
-            <article class="package-card">
-
-                <div class="package-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=85"
-                        alt="Bali vacation"
-                    >
-
-                    <span class="package-label">
-                        Popular
-                    </span>
-
-                </div>
-
-                <div class="package-content">
-
-                    <div class="package-meta">
-                        <span>
-                            <i class="fa-regular fa-clock"></i>
-                            5 Days / 4 Nights
-                        </span>
-
-                        <span>
-                            <i class="fa-solid fa-location-dot"></i>
-                            Bali
-                        </span>
-                    </div>
-
-                    <h3>Bali Island Escape</h3>
-
-                    <p>
-                        Experience beautiful beaches, peaceful temples
-                        and the best of Bali with a relaxing island getaway.
-                    </p>
-
-                    <div class="package-bottom">
-
-                        <div class="package-price">
-                            <span>Starting from</span>
-                            <strong>₹39,999</strong>
-                        </div>
-
-                        <a href="#plan" class="package-button">
-                            View Trip
                             <i class="fa-solid fa-arrow-right"></i>
+
                         </a>
 
                     </div>
 
-                </div>
 
-            </article>
+                    <div class="cta-decoration">
 
+                        <i class="fa-solid fa-plane"></i>
 
-            <!-- Package 2 -->
-            <article class="package-card">
-
-                <div class="package-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1000&q=85"
-                        alt="Dubai vacation"
-                    >
-
-                    <span class="package-label">
-                        Best Seller
-                    </span>
-
-                </div>
-
-                <div class="package-content">
-
-                    <div class="package-meta">
-                        <span>
-                            <i class="fa-regular fa-clock"></i>
-                            6 Days / 5 Nights
-                        </span>
-
-                        <span>
-                            <i class="fa-solid fa-location-dot"></i>
-                            Dubai
-                        </span>
                     </div>
 
-                    <h3>Dubai City Adventure</h3>
+                </div>
 
-                    <p>
-                        Explore iconic landmarks, desert landscapes,
-                        luxury experiences and the vibrant city of Dubai.
-                    </p>
+            </div>
 
-                    <div class="package-bottom">
+        </section>        <!-- =========================
+             FOOTER
+        ========================== -->
 
-                        <div class="package-price">
-                            <span>Starting from</span>
-                            <strong>₹49,999</strong>
+        <footer class="footer" id="contact">
+
+            <div class="container">
+
+                <div class="footer-main">
+
+
+                    <!-- Brand -->
+
+                    <div class="footer-brand">
+
+                        <a href="#home" class="logo">
+                            Wander<span>ly</span>
+                        </a>
+
+                        <p>
+
+                            Discover more. Travel further.
+                            We help you create unforgettable
+                            journeys around the world.
+
+                        </p>
+
+
+                        <div class="social-links">
+
+                            <a href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a href="#" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#" aria-label="X">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+
+                            <a href="#" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+
                         </div>
 
-                        <a href="#plan" class="package-button">
-                            View Trip
-                            <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+
+                    <!-- Explore -->
+
+                    <div class="footer-column">
+
+                        <h4>
+                            Explore
+                        </h4>
+
+                        <a href="#home">
+                            Home
+                        </a>
+
+                        <a href="#destinations">
+                            Destinations
+                        </a>
+
+                        <a href="#packages">
+                            Packages
+                        </a>
+
+                        <a href="#about">
+                            About Us
                         </a>
 
                     </div>
 
-                </div>
 
-            </article>
+                    <!-- Support -->
 
+                    <div class="footer-column">
 
-            <!-- Package 3 -->
-            <article class="package-card">
+                        <h4>
+                            Support
+                        </h4>
 
-                <div class="package-image">
+                        <a href="#contact">
+                            Contact Us
+                        </a>
 
-                    <img
-                        src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=1000&q=85"
-                        alt="Maldives vacation"
-                    >
+                        <!-- UPDATED -->
 
-                    <span class="package-label">
-                        Luxury
-                    </span>
+                        <a href="plan.html">
+                            Plan Your Trip
+                        </a>
 
-                </div>
+                        <a href="#">
+                            FAQs
+                        </a>
 
-                <div class="package-content">
-
-                    <div class="package-meta">
-                        <span>
-                            <i class="fa-regular fa-clock"></i>
-                            5 Days / 4 Nights
-                        </span>
-
-                        <span>
-                            <i class="fa-solid fa-location-dot"></i>
-                            Maldives
-                        </span>
-                    </div>
-
-                    <h3>Maldives Paradise</h3>
-
-                    <p>
-                        Enjoy crystal-clear waters, private beaches
-                        and a peaceful tropical island experience.
-                    </p>
-
-                    <div class="package-bottom">
-
-                        <div class="package-price">
-                            <span>Starting from</span>
-                            <strong>₹54,999</strong>
-                        </div>
-
-                        <a href="#plan" class="package-button">
-                            View Trip
-                            <i class="fa-solid fa-arrow-right"></i>
+                        <a href="#">
+                            Travel Guide
                         </a>
 
                     </div>
 
+
+                    <!-- Contact -->
+
+                    <div class="footer-column">
+
+                        <h4>
+                            Get In Touch
+                        </h4>
+
+                        <a href="mailto:hello@wanderly.com">
+                            hello@wanderly.com
+                        </a>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+
+                        <span>
+                            Kochi, Kerala, India
+                        </span>
+
+                    </div>
+
+
                 </div>
 
-            </article>
 
-        </div>
+                <!-- Footer Bottom -->
 
-    </div>
+                <div class="footer-bottom">
 
-</section><!-- ================= WHY CHOOSE US ================= -->
-<section class="why-us section" id="about">
+                    <p>
+                        © 2026 Wanderly. All rights reserved.
+                    </p>
 
-    <div class="container">
+                    <p>
+                        Made with passion for travelers.
+                    </p>
 
-        <div class="section-heading why-heading">
-            <div>
-                <p class="section-tag">WHY WANDERLY</p>
-                <h2>Travel With<br>Confidence</h2>
-            </div>
-
-            <p class="section-description">
-                We make travel simple, memorable and stress-free by
-                taking care of the details that matter most.
-            </p>
-        </div>
-
-
-        <div class="benefits-grid">
-
-            <!-- Benefit 1 -->
-            <div class="benefit-card">
-
-                <div class="benefit-icon">
-                    <i class="fa-solid fa-tags"></i>
-                </div>
-
-                <h3>Best Travel Deals</h3>
-
-                <p>
-                    Get great value with carefully selected packages
-                    designed to give you more for your money.
-                </p>
-
-                <span class="benefit-number">01</span>
-
-            </div>
-
-
-            <!-- Benefit 2 -->
-            <div class="benefit-card">
-
-                <div class="benefit-icon">
-                    <i class="fa-solid fa-compass"></i>
-                </div>
-
-                <h3>Handpicked Destinations</h3>
-
-                <p>
-                    Explore amazing places chosen for their unique
-                    experiences, beauty and unforgettable memories.
-                </p>
-
-                <span class="benefit-number">02</span>
-
-            </div>
-
-
-            <!-- Benefit 3 -->
-            <div class="benefit-card">
-
-                <div class="benefit-icon">
-                    <i class="fa-solid fa-headset"></i>
-                </div>
-
-                <h3>24/7 Support</h3>
-
-                <p>
-                    Our travel support team is always ready to help
-                    before, during and after your journey.
-                </p>
-
-                <span class="benefit-number">03</span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section><!-- ================= FINAL CTA ================= -->
-<section class="final-cta" id="plan">
-
-    <div class="container">
-
-        <div class="cta-box">
-
-            <div class="cta-content">
-
-                <p class="section-tag">YOUR NEXT ADVENTURE AWAITS</p>
-
-                <h2>
-                    Ready for Your<br>
-                    Next Adventure?
-                </h2>
-
-                <p>
-                    Tell us where you want to go and we'll help you
-                    turn your travel dreams into unforgettable memories.
-                </p>
-
-                <a href="#contact" class="cta-button">
-                    Plan Your Trip
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-
-            </div>
-
-            <div class="cta-decoration">
-                <i class="fa-solid fa-plane"></i>
-            </div>
-
-        </div>
-
-    </div>
-
-</section><!-- ================= FOOTER ================= -->
-<footer class="footer" id="contact">
-
-    <div class="container">
-
-        <div class="footer-main">
-
-            <div class="footer-brand">
-
-                <a href="#home" class="logo">
-                    Wander<span>ly</span>
-                </a>
-
-                <p>
-                    Discover more. Travel further. We help you
-                    create unforgettable journeys around the world.
-                </p>
-
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
 
             </div>
 
-            <div class="footer-column">
-                <h4>Explore</h4>
-                <a href="#home">Home</a>
-                <a href="#destinations">Destinations</a>
-                <a href="#packages">Packages</a>
-                <a href="#about">About Us</a>
-            </div>
+        </footer>
 
-            <div class="footer-column">
-                <h4>Support</h4>
-                <a href="#contact">Contact Us</a>
-                <a href="#plan">Plan Your Trip</a>
-                <a href="#">FAQs</a>
-                <a href="#">Travel Guide</a>
-            </div>
-
-            <div class="footer-column">
-                <h4>Get In Touch</h4>
-                <a href="mailto:hello@wanderly.com">
-                    hello@wanderly.com
-                </a>
-                <a href="tel:+919876543210">
-                    +91 98765 43210
-                </a>
-                <span>Kochi, Kerala, India</span>
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-            <p>© 2026 Wanderly. All rights reserved.</p>
-            <p>Made with passion for travelers.</p>
-        </div>
-
-    </div>
-
-</footer>
 
     </main>
 
 
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
     <script src="script.js"></script>
 
+
 </body>
+
 </html>
